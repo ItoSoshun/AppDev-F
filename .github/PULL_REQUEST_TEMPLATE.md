@@ -1,4 +1,4 @@
-<!-- GitHub Copilot review rule -->
+<!-- for GitHub Copilot review rule -->
 <!-- important: すべてを日本語でレビューしてください -->
 <!-- レビューの際は必ず以下の接頭辞を付けてください -->
 <!-- [must] → かならず変更してね -->
@@ -7,4 +7,4 @@
 <!-- [ask] → 質問 -->
 <!-- [fyi] → 参考情報 -->
 <!-- また、次のように日本語の接頭辞とすること[必須]  [意見]  [軽微]   [質問]  [参考]  -->
-<!-- GitHub Copilot review rule -->
+<!-- for GitHub Copilot review rule -->
