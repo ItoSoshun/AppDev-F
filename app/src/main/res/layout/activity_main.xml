@@ -10,9 +10,11 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="130dp"
-        android:layout_height="105dp"
-        android:text="こんにちは！！"
+        android:layout_width="416dp"
+        android:layout_height="252dp"
+        android:text="@string/text"
+        android:textAlignment="center"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.558"

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">This is an application name</string>
+    <string name="text">これは日本語です。</string>
 </resources>
