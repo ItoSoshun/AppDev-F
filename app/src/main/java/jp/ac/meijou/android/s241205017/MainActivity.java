@@ -11,12 +11,13 @@ import android.widget.TextView;
 import jp.ac.meijou.android.s241205017.databinding.ActivityMainBinding;
 import android.text.Editable;
 import android.text.TextWatcher;
-
+import jp.ac.meijou.android.s241205017.PrefDataStore;
 
 
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
+    private PrefDataStore prefDataStore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,24 +39,31 @@ public class MainActivity extends AppCompatActivity {
             binding.id017.setText(text2);
         });
 
-        binding.editTextText.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
-            }
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
-            }
-            @Override
-            public void afterTextChanged(Editable editable) {
+        prefDataStore = PrefDataStore.getInstance(this);
 
-            }
+        //prefDataStore.getString("name").ifPresent(name -> binding.id017.setText(name));
 
+        binding.button.setOnClickListener(v -> {
+            var text2 = binding.editTextText.getText().toString();
+            binding.id017.setText(text2);
         });
 
+        binding.saveButton.setOnClickListener(v -> {
+            var text2 = binding.editTextText.getText().toString();
+            prefDataStore.setString("name", text2);
+        });
+        }
 
+    protected void onStart() {
+        super.onStart();
+        prefDataStore.getString("name").ifPresent(name -> binding.id017.setText(name));
     }
+
+
+
+
 
 
 }
