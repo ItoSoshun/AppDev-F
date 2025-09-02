@@ -9,6 +9,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import android.widget.TextView;
 import jp.ac.meijou.android.s241205017.databinding.ActivityMainBinding;
+import android.text.Editable;
+import android.text.TextWatcher;
+
 
 
 public class MainActivity extends AppCompatActivity {
@@ -30,7 +33,28 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        binding.id017.setText(R.string.text2);
+        binding.button.setOnClickListener(v -> {
+            var text2 = binding.editTextText.getText().toString();
+            binding.id017.setText(text2);
+        });
+
+        binding.editTextText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+
+        });
+
+
     }
 
 
