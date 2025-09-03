@@ -8,7 +8,7 @@
     tools:context=".MainActivity2">
 
     <Button
-        android:id="@+id/Id_Button_A"
+        android:id="@+id/Id_Button_ButtonA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -17,21 +17,21 @@
         android:textSize="30sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/Id_Button_B"
+        app:layout_constraintEnd_toStartOf="@+id/Id_Button_ButtonB"
         />
 
     <Button
-        android:id="@+id/Id_Button_B"
+        android:id="@+id/Id_Button_ButtonB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:text="ボタンB"
         android:textSize="30sp"
-        app:layout_constraintStart_toEndOf="@+id/Id_Button_A"
-        app:layout_constraintTop_toTopOf="@id/Id_Button_A" />
+        app:layout_constraintStart_toEndOf="@+id/Id_Button_ButtonA"
+        app:layout_constraintTop_toTopOf="@id/Id_Button_ButtonA" />
 
     <TextView
-        android:id="@+id/Id_Textview_1"
+        android:id="@+id/Id_Textview_NO.1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
@@ -41,38 +41,37 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/Id_Textview_2"
+        app:layout_constraintBottom_toTopOf="@id/Id_Textview_NO.2"
 
 
 
         />
 
     <TextView
-        android:id="@+id/Id_Textview_2"
+        android:id="@+id/Id_Textview_NO.2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="これは最初は表示されている"
         android:textSize="20sp"
 
-        app:layout_constraintStart_toStartOf="@id/Id_Textview_1"
-        app:layout_constraintTop_toBottomOf="@id/Id_Textview_1"
-        app:layout_constraintBottom_toTopOf="@id/Id_Textview_3"
+        app:layout_constraintStart_toStartOf="@id/Id_Textview_NO.1"
+        app:layout_constraintTop_toBottomOf="@id/Id_Textview_NO.1"
+        app:layout_constraintBottom_toTopOf="@id/Id_Textview_NO.3"
 
         />
 
     <TextView
-        android:id="@+id/Id_Textview_3"
+        android:id="@+id/Id_Textview_NO.3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="これも最初は表示されている"
         android:textSize="20sp"
 
-        app:layout_constraintStart_toStartOf="@id/Id_Textview_2"
-        app:layout_constraintTop_toBottomOf="@id/Id_Textview_2"
+        app:layout_constraintStart_toStartOf="@id/Id_Textview_NO.2"
+        app:layout_constraintTop_toBottomOf="@id/Id_Textview_NO.2"
 
         />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
