@@ -77,7 +77,7 @@
     <EditText
         android:id="@+id/Id_EditText_Blank"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:inputType="text"
         android:text="Blank"
 
@@ -97,6 +97,32 @@
         android:layout_marginTop="0dp"
         app:layout_constraintStart_toEndOf="@id/Id_EditText_Blank"
         app:layout_constraintTop_toTopOf="@id/Id_EditText_Blank"
+        />
+
+    <TextView
+        android:id="@+id/Id_EditText_Result"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:text="Blank"
+        android:textSize="30sp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Id_EditText_Blank"
+        />
+
+    <Button
+        android:id="@+id/Id_Button_Call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="起動する"
+
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toEndOf="@id/Id_EditText_Result"
+        app:layout_constraintTop_toTopOf="@id/Id_EditText_Result"
         />
 
 

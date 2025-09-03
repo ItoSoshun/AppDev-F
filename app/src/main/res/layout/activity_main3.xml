@@ -19,4 +19,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         />
+
+    <Button
+        android:id="@+id/Id_Button_OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Id_Textview_Senter"
+        />
+
+    <Button
+        android:id="@+id/Id_Button_Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toEndOf="@id/Id_Button_OK"
+        app:layout_constraintTop_toTopOf="@id/Id_Button_OK"
+        />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
