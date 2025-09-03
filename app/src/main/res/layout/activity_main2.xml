@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <Button
+        android:id="@+id/Id_Button_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:text="ボタンA"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Id_Button_B"
+        />
+
+    <Button
+        android:id="@+id/Id_Button_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="ボタンB"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/Id_Button_A"
+        app:layout_constraintTop_toTopOf="@id/Id_Button_A" />
+
+    <TextView
+        android:id="@+id/Id_Textview_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="20dp"
+        android:text="これは表示されている"
+        android:textSize="20sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Id_Textview_2"
+
+
+
+        />
+
+    <TextView
+        android:id="@+id/Id_Textview_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="これは最初は表示されている"
+        android:textSize="20sp"
+
+        app:layout_constraintStart_toStartOf="@id/Id_Textview_1"
+        app:layout_constraintTop_toBottomOf="@id/Id_Textview_1"
+        app:layout_constraintBottom_toTopOf="@id/Id_Textview_3"
+
+        />
+
+    <TextView
+        android:id="@+id/Id_Textview_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="これも最初は表示されている"
+        android:textSize="20sp"
+
+        app:layout_constraintStart_toStartOf="@id/Id_Textview_2"
+        app:layout_constraintTop_toBottomOf="@id/Id_Textview_2"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
