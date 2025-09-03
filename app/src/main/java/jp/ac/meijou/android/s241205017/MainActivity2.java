@@ -45,5 +45,16 @@ public class MainActivity2 extends AppCompatActivity {
             startActivity(intent);
             binding.IdTextviewNO1.setText("ボタンBが押されました");
         });
+
+        binding.IdButtonSend.setOnClickListener(v -> {
+
+            var send_message = binding.IdEditTextBlank.getText().toString();
+            var intent = new Intent(this, MainActivity3.class);
+            intent.putExtra("Message", send_message);
+            startActivity(intent);
+            binding.IdButtonSend.setText("送信済み");
+        });
+
+
     }
 }
