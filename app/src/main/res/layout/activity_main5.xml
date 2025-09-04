@@ -21,8 +21,8 @@
         android:id="@+id/Id_Edittext_Placehold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
 
         android:ems="10"
         android:inputType="text"
@@ -36,8 +36,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginTop="0dp"
         android:layout_marginStart="40dp"
+        android:layout_marginTop="0dp"
         android:text="表示"
         app:layout_constraintStart_toEndOf="@+id/Id_Edittext_Placehold"
         app:layout_constraintTop_toTopOf="@id/Id_Edittext_Placehold"

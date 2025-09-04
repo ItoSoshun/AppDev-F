@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity6">
+
+    <TextView
+        android:id="@+id/Id_Textview_Transport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transport"
+        android:textSize="50dp"
+
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/Id_Button_Transport"
+        app:layout_constraintTop_toBottomOf="@id/Id_Button_Transport"
+        />
+
+    <TextView
+        android:id="@+id/Id_Textview_Internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ofline"
+        android:textSize="20dp"
+
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/Id_Button_Internet"
+        app:layout_constraintTop_toBottomOf="@id/Id_Button_Internet"
+        />
+
+    <Button
+        android:id="@+id/Id_Button_Transport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transport"
+        android:textSize="20dp"
+
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/Id_Button_Internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP-Address"
+        android:textSize="20dp"
+
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintStart_toStartOf="@id/Id_Button_Transport"
+        app:layout_constraintTop_toBottomOf="@id/Id_Button_Transport"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
